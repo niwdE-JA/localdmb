@@ -8,7 +8,7 @@ function App() {
   };
 
   return (
-    <div className="bg-primary flex flex-col h-screen w-screen">
+    <div className="bg-primary flex flex-col min-h-screen w-screen">
       <div className='bg-secondary min-h-2/5 pb-6 w-full flex flex-col'>
         <nav className='--(nav) px-8 flex h-fit w-full justify-between'>
           <div className='flex'>
@@ -20,10 +20,10 @@ function App() {
           </div>
 
           <div className="--(feedback) flex">
-            <button className="navbar-toggle md:invisible" onClick={ toggleNavbar }>
+            <button className="navbar-toggle md:hidden" onClick={ toggleNavbar }>
               <img src='/hamburger-transparent.png' alt='menu' width={30} height={30}/>
             </button>
-            <div className={`navbar-hide ${ true? 'hide' : '' } flex invisible md:visible`}>
+            <div className={`navbar-hide ${ true? 'hide' : '' } hidden md:flex`}>
               <button className="bg-primary h-fit w-fit border border-custom px-4 py-1 mx-2 my-auto rounded-md">Feedback</button>
               <a href="/help" className="mx-2 my-auto">Help</a>
             </div>
@@ -43,7 +43,7 @@ function App() {
       </div>
 
       <div className='flex justify-start w-full'>
-        <div className='flex flex-col w-1/5 mx-12'>
+        <div className='flex flex-col w-2/5 mid:w-3/5 mx-12'>
           <div className='mt-3 mb-6 flex'>
             <div className='relative w-4 flex justify-center'>
               <div className='w-1 h-full bg-gray-300 rounded-full'></div>
@@ -93,7 +93,7 @@ function App() {
         </div>
       </div>
 
-      <div className='absolute w-7/12 h-3/5 bg-primary border-2 border-custom py-5 px-8 rounded-xl right-24 bottom-9'>
+      <div className='absolute mid:relative mid:mx-auto mid:w-11/12 mid:left-0 w-7/12 h-3/5 bg-primary border-2 border-custom py-5 px-8 rounded-xl right-24 xl:right-20 lg:right-10 md:right-4 bottom-9 mid:bottom-0'>
         <h2 className='text-2xl text-green-900 font-semibold mb-3'>Configure Workflow</h2>  
         <hr className='border border-custom'/>
 

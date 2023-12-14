@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
       extend: {
+        screens: {
+          mid: {'max': '980px'},
+        },
         backgroundColor: {
           primary: '#F3EED8',
           secondary: '#EBE4C7',
