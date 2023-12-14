@@ -6,3 +6,6 @@
 @import "tailwindcss/utilities";
  
 /* Additional styles */
+*{
+   font-family: 'Roboto';
+}
