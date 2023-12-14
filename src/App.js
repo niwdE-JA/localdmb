@@ -36,17 +36,26 @@ function App() {
           <p>Please follow the steps below to configure your Workflow and run it.</p>
         </div>
 
-        <div className='h-fit w-fit mx-12 mt-8 relative'>
+        <div className='h-fit w-fit mx-12 mt-8 relative bg-primary p-3 px-28 rounded-2xl'>
           <img src='/github.svg' alt='github' className='absolute top-1/2 -translate-y-1/2 left-4' />
-          <input type='text' name='repoName' placeholder='fimio-workflow' className='bg-primary rounded-2xl py-3 px-20 placeholder:text-gray-600' />
+          <p>fimio-workflow</p>
         </div>
       </div>
 
       <div className='flex justify-start w-full'>
         <div className='flex flex-col w-1/5 mx-12'>
-          <div className='mt-3 mb-6 ps-4 relative'>
-            <p className='text-green-900 font-semibold'>Configure</p>
-            <p>Run</p>
+          <div className='mt-3 mb-6 flex'>
+            <div className='relative w-4 flex justify-center'>
+              <div className='w-1 h-full bg-gray-300 rounded-full'></div>
+              <div className='w-3 h-3 bg-headers rounded-full absolute top-0 left-1/2 -translate-x-1/2'></div>
+              <div className='w-3 h-3 bg-gray-300 rounded-full absolute bottom-0 left-1/2 -translate-x-1/2'></div>
+            </div>
+
+            <div className='ps-4'>
+              <p className='text-green-900 font-bold'>Configure</p>
+              <p>Run</p>              
+            </div>
+
           </div>
           <hr className='border border-custom'/>
           
@@ -84,7 +93,7 @@ function App() {
         </div>
       </div>
 
-      <div className='absolute w-7/12 h-3/5 bg-primary border-2 border-custom py-5 px-8 rounded-xl right-24 bottom-8'>
+      <div className='absolute w-7/12 h-3/5 bg-primary border-2 border-custom py-5 px-8 rounded-xl right-24 bottom-9'>
         <h2 className='text-2xl text-green-900 font-semibold mb-3'>Configure Workflow</h2>  
         <hr className='border border-custom'/>
 
