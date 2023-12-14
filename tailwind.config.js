@@ -14,7 +14,6 @@ module.exports = {
         },
         color: {
           custom: '#666666',
-          customgreen: '#2A5C50',
         },
         borderColor: {
           custom: '#DCD5B8',
